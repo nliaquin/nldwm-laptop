@@ -1,8 +1,9 @@
 # Common settings
 PREFIX  := /usr/local
 CC      := cc
-CFLAGS  := -pedantic -Wall -Wno-deprecated-declarations -Os -I.
-LDFLAGS := -lX11
+VERSION := 1.0
+CFLAGS  := -pedantic -Wall -Wno-deprecated-declarations -Os -I. -I/usr/include/freetype2 -DVERSION=\"${VERSION}\"
+LDFLAGS := -lX11 -lXft -lfontconfig
 
 # Source files
 DWM_SRC = drw.c dwm.c util.c
