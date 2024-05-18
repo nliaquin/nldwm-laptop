@@ -50,3 +50,7 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# dwm & dwmblocks header files
+blocks.h
+config.h
